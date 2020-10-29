@@ -1,5 +1,5 @@
 # Portfolio ![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen) ![GitHub issues](https://img.shields.io/github/issues/LCordial/myportfolio)
-`Zombie Shooter` is a survival game inspired by DIEP.io
+`Portfolio` is my website that houses all my projects, developer roads maps and much more
 
 # Use
 ### Current release
