@@ -13,7 +13,7 @@ Help development by joining the Ambience Studios discord server.
 * [Firebase hosting](https://firebase.google.com/)
 
 # Compatibility
-Zombie Shooter is compatible on [Google Chrome](https://www.google.com/intl/en_au/chrome/)
+My Portfolio is compatible on [Google Chrome](https://www.google.com/intl/en_au/chrome/)
 
 # License
 [MIT](https://github.com/LCordial/p5ZombieShooter/blob/master/LICENSE)
