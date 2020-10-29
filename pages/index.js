@@ -16,7 +16,7 @@ export default function Home() {
       <main>
 
         <h1 className="title">
-          Welcome to my Portfolio
+          Welcome to my Portfolio.
         </h1>
 
         {/* <p className="description">
@@ -25,23 +25,21 @@ export default function Home() {
         
         <Layout home>
           <section className={utilStyles.headingMd}>
-            <p className={utilStyles.introParagraph}></p>
+            <p className={utilStyles.introParagraph}>I am a beginner backend and frontend Software Engineer, wanting to become better everyday. Specializing in Web development and Game Development. Using languages like Javascript, C#, HTML and CSS.</p>
           </section>
         </Layout>
 
+        <h1 className="secondaryTitle">
+          Projects
+        </h1>
 
         <div className="grid">
-          {/* <a href="https://github.com/LCordial" className="card">
-            <h3>Github &rarr;</h3>
-            <p>Find my source code for all projects.</p>
-            <p><code>c#, Javascript, HTML, CSS</code></p>
-          </a> */}
 
-          <a href="https://tanks.ambience.studio" className="card">
-            <h3>Tanks &rarr;</h3>
-            <p>A project for Digital Technolgies class.</p>
-            <p className={tags.linkTag}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
-            <p><code>Javascript, p5.js</code></p>
+          <a href="https://cordial.ambience.studio/" className="card">
+            <h3>Portfolio &rarr;</h3>
+            <p>My Portfolio.</p>
+            <p className={tags.linkTag}><a href="https://github.com/LCordial/myportfolio">Source Code</a></p>
+            <p><code>Javascript, Nextjs</code></p>
           </a>
 
           <a href="https://github.com/LCordial/parkour-game-template" className="card">
@@ -50,8 +48,18 @@ export default function Home() {
             <p><code>Unity3D, c#</code></p>
           </a>
 
+          <a href="https://tanks.ambience.studio" className="card">
+            <h3>Tanks &rarr;</h3>
+            <p>A project for Digital Technolgies class.</p>
+            <p className={tags.linkTag}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
+            <p><code>Javascript, p5.js</code></p>
+          </a>
+
         </div>
 
+        {/* <h1 className="secondaryTitle">
+          Hobbies
+        </h1> */}
 
       </main>
 
@@ -124,6 +132,13 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+          padding-bottom: 7rem;
+        }
+
+        .secondaryTitle{
+          font-size: 3rem;
+          padding-bottom: 7rem;
+          padding-top: 6rem;
         }
 
         .title,

@@ -21,14 +21,14 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img src="/public/images/image.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name}/>
+            <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name}/>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
             <Link href="/">
               <a>
-                <img src="/public/images/image.jpg" className={`${styles.headerImage} ${utilStyles.borderCircle}`} alt={name}/>
+                <img src="/images/profile.jpg" className={`${styles.headerImage} ${utilStyles.borderCircle}`} alt={name}/>
               </a>
             </Link>
           </>
