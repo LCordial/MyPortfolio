@@ -16,4 +16,4 @@ Help development by joining the Ambience Studios discord server.
 My Portfolio is compatible on [Google Chrome](https://www.google.com/intl/en_au/chrome/)
 
 # License
-[MIT](https://github.com/LCordial/p5ZombieShooter/blob/master/LICENSE)
+[MIT](https://github.com/LCordial/myportfolio/blob/master/LICENSE)
