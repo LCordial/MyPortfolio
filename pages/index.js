@@ -1,16 +1,21 @@
 import Head from 'next/head'
 
-import Layout from "../components/layout"
+import Aboutme from "../components/About.js"
+import Special from "../components/Special.js"
+
 import utilStyles from '../styles/utils.module.css'
-//import gridStyles from '../styles/grid.css'
 import tags from '../styles/tags.module.css'
 
 export default function Home() {
   return (
     <div className="container">
-
       <Head>
-        <title>My Portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="My Portfolio"
+        />
+        <title>Eli Bessen | Programmer, Gamer</title>
       </Head>
 
       <main>
@@ -23,11 +28,15 @@ export default function Home() {
           Under construction. Please come back later.
         </p> */}
         
-        <Layout home>
+        <Aboutme home>
           <section className={utilStyles.headingMd}>
             <p className={utilStyles.introParagraph}>I am a beginner backend and frontend Software Engineer, wanting to become better everyday. Specializing in Web development and Game Development. Using languages like Javascript, C#, HTML and CSS.</p>
           </section>
-        </Layout>
+        </Aboutme>
+        
+        <Special special>
+          
+        </Special>
 
         <h1 className="secondaryTitle">
           Projects
@@ -53,6 +62,12 @@ export default function Home() {
             <p>A project for Digital Technolgies class.</p>
             <p className={tags.linkTag}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
             <p><code>Javascript, p5.js</code></p>
+          </a>
+
+          <a href="https://github.com/LCordial/puzzle-game" className="card">
+            <h3>Welcome to the Game &rarr;</h3>
+            <p>An incomplete puzzle game. Find clues and solve puzzles!</p>
+            <p><code>Javascript, HTML, CSS</code></p>
           </a>
 
         </div>
