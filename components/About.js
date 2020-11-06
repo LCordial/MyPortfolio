@@ -1,6 +1,4 @@
-import Head from 'next/head'
-
-import styles from './component style/About.module.css'
+import styles from './component style/about.module.css'
 import utilStyles from '../styles/utils.module.css'
 
 import Link from 'next/link'

@@ -33,14 +33,16 @@ export default function Home() {
             <p className={utilStyles.introParagraph}>I am a beginner backend and frontend Software Engineer, wanting to become better everyday. Specializing in Web development and Game Development. Using languages like Javascript, C#, HTML and CSS.</p>
           </section>
         </Aboutme>
+      
+        <Special special></Special>
+
         
-        <Special special>
-          
-        </Special>
 
         <h1 className="secondaryTitle">
           Projects
         </h1>
+
+        {/* Project Grid | To be seperated into component */}
 
         <div className="grid">
 
@@ -48,7 +50,7 @@ export default function Home() {
             <h3>Portfolio &rarr;</h3>
             <p>My Portfolio.</p>
             <p className={tags.linkTag}><a href="https://github.com/LCordial/myportfolio">Source Code</a></p>
-            <p><code>Javascript, Nextjs</code></p>
+            <p><code>Javascript, Nextjs, Firebase</code></p>
           </a>
 
           <a href="https://github.com/LCordial/parkour-game-template" className="card">
@@ -61,7 +63,7 @@ export default function Home() {
             <h3>Tanks &rarr;</h3>
             <p>A project for Digital Technolgies class.</p>
             <p className={tags.linkTag}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
-            <p><code>Javascript, p5.js</code></p>
+            <p><code>Javascript, p5.js, Firebase</code></p>
           </a>
 
           <a href="https://github.com/LCordial/puzzle-game" className="card">
@@ -147,13 +149,13 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
-          padding-bottom: 7rem;
+          padding-bottom: 12rem;
         }
 
         .secondaryTitle{
           font-size: 3rem;
           padding-bottom: 7rem;
-          padding-top: 6rem;
+          padding-top: 5rem;
         }
 
         .title,
