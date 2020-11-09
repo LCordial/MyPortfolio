@@ -1,0 +1,8 @@
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+.horizontallist{
+    display:inline;
+    margin: 0.3em;
+}

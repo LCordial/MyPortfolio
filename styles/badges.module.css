@@ -1,0 +1,74 @@
+.failingTag{
+    color: red;
+    font-weight: bold;
+}
+
+.warningbadge{
+
+    background-color: rgb(236, 216, 186);
+    color: rgb(235, 141, 19);
+
+    width: 6.5em;
+    text-align: center;
+    border-radius: .5em;
+    padding: 0.3em;
+
+    font-weight: bold;
+
+    /* Animation */
+    transition: 0.4s; 
+}
+
+.linkbadge{
+    color: rgb(9, 66, 131);
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.linkbadge:focus,
+.linkbadge:hover{
+    color:  rgb(43, 121, 194);
+}
+.linkbadge:active{
+    text-decoration: underline;
+}
+
+.infobadge{
+
+    background-color: rgb(58, 90, 158);
+    color: rgb(255, 255, 255);
+
+    width: 6.5em;
+    text-align: center;
+    border-radius: .5em;
+    padding: 0.3em;
+
+    font-weight: light;
+
+    /* Animation */
+    transition: 0.4s;
+}
+
+.basicbadge{
+    position: absolute;
+
+    background: #fafafa;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    opacity: 0;
+
+    /* Animation */
+    transition: 0.4s;
+}
+
+@media (max-width: 800px){
+    .infobadge,
+    .warningbadge{
+        opacity: 0;
+    }
+    .basicbadge{
+        opacity: 1;
+    }
+}

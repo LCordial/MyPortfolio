@@ -32,7 +32,7 @@ export default function Special({ children, special }) {
                       <p className={styles.text}>I like to code things from scratch. Bringing an idea to life on the computer.</p>
 
                       <p className={styles.paragraphtitle}>Languages:</p>
-                      <p className={styles.text}>Javascript, C#, Pytnon, CSS,</p>
+                      <p className={styles.text}>Javascript, C#, Python, CSS,</p>
                       <p className={styles.paragraphtitle}>Dev Tools:</p>
                       <ul className={styles.list}>
                         <li>Visual Studio Code</li>

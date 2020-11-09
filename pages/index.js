@@ -4,9 +4,11 @@ import Aboutme from "../components/About.js"
 import Special from "../components/Special.js"
 
 import utilStyles from '../styles/utils.module.css'
-import tags from '../styles/tags.module.css'
+import tags from '../styles/badges.module.css'
+import main from '../styles/index.module.css'
 
 export default function Home() {
+
   return (
     <div className="container">
       <Head>
@@ -49,27 +51,51 @@ export default function Home() {
           <a href="https://cordial.ambience.studio/" className="card">
             <h3>Portfolio &rarr;</h3>
             <p>My Portfolio.</p>
-            <p className={tags.linkTag}><a href="https://github.com/LCordial/myportfolio">Source Code</a></p>
-            <p><code>Javascript, Nextjs, Firebase</code></p>
+
+            <p className={tags.linkbadge}><a href="https://github.com/LCordial/myportfolio">Source Code</a></p>
+
+            <ul className={main.list}>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Javascript</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Nextjs</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Firebase</li>
+            </ul>
+            <code className={tags.basicbadge}>Javascript, Nextjs, Firebase</code>
+
           </a>
 
           <a href="https://github.com/LCordial/parkour-game-template" className="card">
             <h3>Parkour Game Template &rarr;</h3>
             <p>A template focusing on movement.</p>
-            <p><code>Unity3D, c#</code></p>
+            <ul className={main.list}>
+              <li className={[tags.warningbadge, main.horizontallist].join(' ')}>Active Development</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Unity3D</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>c#</li>
+            </ul>
+            <code className={tags.basicbadge}>Unity3D, c#</code>
           </a>
 
           <a href="https://tanks.ambience.studio" className="card">
             <h3>Tanks &rarr;</h3>
             <p>A project for Digital Technolgies class.</p>
-            <p className={tags.linkTag}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
-            <p><code>Javascript, p5.js, Firebase</code></p>
+            <p className={tags.linkbadge}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
+            <ul className={main.list}>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Javascript</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>p5.js</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Firebase</li>
+            </ul>
+            <code className={tags.basicbadge}>Javascript, p5.js, Firebase</code>
           </a>
 
           <a href="https://github.com/LCordial/puzzle-game" className="card">
             <h3>Welcome to the Game &rarr;</h3>
             <p>An incomplete puzzle game. Find clues and solve puzzles!</p>
-            <p><code>Javascript, HTML, CSS</code></p>
+            <ul className={main.list}>
+              <li className={[tags.warningbadge, main.horizontallist].join(' ')}>Incomplete</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Javascript</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>HTML</li>
+              <li className={[tags.infobadge, main.horizontallist].join(' ')}>CSS</li>
+            </ul>
+            <code className={tags.basicbadge}>Javascript, HTML, CSS</code>
           </a>
 
         </div>
@@ -199,10 +225,12 @@ export default function Home() {
         }
 
         .card:hover,
-        .card:focus,
-        .card:active {
+        .card:focus{
           color: #0070f3;
           border-color: #0070f3;
+        }
+        .card:active{
+          color: #003879;
         }
 
         .card h3 {
