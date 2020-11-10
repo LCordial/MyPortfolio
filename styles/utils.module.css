@@ -57,3 +57,24 @@
       color: rgb(17, 76, 186)
   }
 
+  .wavingHand{
+    margin: 10px;
+
+    animation: shake 0.6s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake{
+    0% { transform:  rotate(4deg); }
+    10% { transform:  rotate(8deg); }
+    20% { transform:  rotate(12deg); }
+    30% { transform:  rotate(16deg); }
+    40% { transform:  rotate(20deg); }
+    50% { transform:  rotate(24deg); }
+    60% { transform:  rotate(20deg); }
+    70% { transform:  rotate(16deg); }
+    80% { transform:  rotate(12deg); }
+    90% { transform:  rotate(8deg); }
+    100% { transform:  rotate(4deg); }
+  }
+

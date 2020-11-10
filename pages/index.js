@@ -4,8 +4,9 @@ import Aboutme from "../components/About.js"
 import Special from "../components/Special.js"
 
 import utilStyles from '../styles/utils.module.css'
-import tags from '../styles/badges.module.css'
+import badges from '../styles/badges.module.css'
 import main from '../styles/index.module.css'
+
 
 export default function Home() {
 
@@ -23,8 +24,12 @@ export default function Home() {
       <main>
 
         <h1 className="title">
-          Welcome to my Portfolio.
+          Welcome to my Portfolio
+          <p className={utilStyles.wavingHand}>
+            👋
+          </p>
         </h1>
+        
 
         {/* <p className="description">
           Under construction. Please come back later.
@@ -52,57 +57,57 @@ export default function Home() {
             <h3>Portfolio &rarr;</h3>
             <p>My Portfolio.</p>
 
-            <p className={tags.linkbadge}><a href="https://github.com/LCordial/myportfolio">Source Code</a></p>
+            <p className={badges.linkbadge}><a href="https://github.com/LCordial/myportfolio">Source Code</a></p>
 
-            <ul className={main.list}>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Javascript</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Nextjs</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Firebase</li>
+            <ul className={[main.list, badges.flexbadge].join(' ')}>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Javascript</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Nextjs</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Firebase</li>
             </ul>
-            <code className={tags.basicbadge}>Javascript, Nextjs, Firebase</code>
 
-          </a>
-
-          <a href="https://github.com/LCordial/parkour-game-template" className="card">
-            <h3>Parkour Game Template &rarr;</h3>
-            <p>A template focusing on movement.</p>
-            <ul className={main.list}>
-              <li className={[tags.warningbadge, main.horizontallist].join(' ')}>Active Development</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Unity3D</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>c#</li>
-            </ul>
-            <code className={tags.basicbadge}>Unity3D, c#</code>
           </a>
 
           <a href="https://tanks.ambience.studio" className="card">
             <h3>Tanks &rarr;</h3>
             <p>A project for Digital Technolgies class.</p>
-            <p className={tags.linkbadge}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
-            <ul className={main.list}>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Javascript</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>p5.js</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Firebase</li>
+
+            <p className={badges.linkbadge}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
+
+            <ul className={[main.list, badges.flexbadge].join(' ')}>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Javascript</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>p5.js</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Firebase</li>
             </ul>
-            <code className={tags.basicbadge}>Javascript, p5.js, Firebase</code>
           </a>
 
           <a href="https://github.com/LCordial/puzzle-game" className="card">
             <h3>Welcome to the Game &rarr;</h3>
-            <p>An incomplete puzzle game. Find clues and solve puzzles!</p>
-            <ul className={main.list}>
-              <li className={[tags.warningbadge, main.horizontallist].join(' ')}>Incomplete</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>Javascript</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>HTML</li>
-              <li className={[tags.infobadge, main.horizontallist].join(' ')}>CSS</li>
+            <p>Find clues and solve puzzles!</p>
+
+            <ul className={[main.list, badges.flexbadge].join(' ')}>
+              <li className={[badges.errorbadge, main.horizontallist, badges.flexbadge].join(' ')}>Incomplete</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Javascript</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>HTML</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>CSS</li>
             </ul>
-            <code className={tags.basicbadge}>Javascript, HTML, CSS</code>
+          </a>
+
+          <a href="https://github.com/LCordial/parkour-game-template" className="card">
+            <h3>Parkour Game Template &rarr;</h3>
+            <p>A template focusing on movement.</p>
+
+            <ul className={[main.list, badges.flexbadge].join(' ')}>
+              <li className={[badges.warningbadge, main.horizontallist, badges.flexbadge].join(' ')}>Developing</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Unity3D</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>C#</li>
+            </ul>
           </a>
 
         </div>
 
         {/* <h1 className="secondaryTitle">
           Hobbies
-        </h1> */}
+        </h1>  */}
 
       </main>
 
@@ -208,7 +213,7 @@ export default function Home() {
           justify-content: center;
           flex-wrap: wrap;
 
-          max-width: 800px;
+          max-width: 1000px;
           margin-top: 3rem;
         }
 
@@ -254,6 +259,8 @@ export default function Home() {
             flex-direction: column;
           }
         }
+
+
       `}</style>
 
 
@@ -270,7 +277,25 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
+
       `}</style>
+
+      <style global>{`
+
+        ::-webkit-scrollbar {
+          width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #f7f7f7;
+        }
+        ::-webkit-scrollbar-thumb {
+          background-color: gray;
+          border-radius: 20px;
+        }
+
+      `}
+        
+      </style>
 
     </div>
   )
