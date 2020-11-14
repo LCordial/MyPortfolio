@@ -1,4 +1,4 @@
-import styles from './component style/column.module.css'
+import styles from './component style/column.module.scss'
 
 import Link from 'next/link'
 
