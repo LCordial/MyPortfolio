@@ -1,6 +1,6 @@
 import styles from './component style/column.module.scss'
 
-import Link from 'next/link'
+
 
 export default function Special({ children, special }) {
     return (
@@ -11,19 +11,19 @@ export default function Special({ children, special }) {
             <>
             <div className={styles.container}>
               <div className={styles.grid}>
-              <div className={styles.column}>
-                  <div>
-                    <figure><img src="/images/hard-drive.svg"></img></figure>
-                      <h1 className={styles.headers}>Technologies</h1>
-                      <p className={styles.text}>Using different technologies makes programming a whole lot better, and easier. That's why I use them.</p>
+                <div className={styles.column}>
+                    <div>
+                      <figure><img src="/images/hard-drive.svg"></img></figure>
+                        <h1 className={styles.headers}>Technologies</h1>
+                        <p className={styles.text}>Using different technologies makes programming a whole lot better, and easier. That's why I use them.</p>
 
-                      <p className={styles.paragraphtitle}>Technologies:</p>
-                      <ul className={styles.list}>
-                          <li>Firebase</li>
-                          <li>Next.js</li>
-                      </ul>
+                        <p className={styles.paragraphtitle}>Technologies:</p>
+                        <ul className={styles.list}>
+                            <li>Firebase</li>
+                            <li>Next.js</li>
+                        </ul>
+                    </div>
                   </div>
-                </div>
                 <div className={styles.column}>
                   <div>
                     <figure><img src="/images/activity.svg"></img></figure>
@@ -41,8 +41,8 @@ export default function Special({ children, special }) {
                         <li>Terminal</li>
                       </ul>
                   </div>
-                    
-                </div>
+                      
+                  </div>
                 <div className={styles.column}>
                   <div>
                     <figure><img src="/images/box.svg"></img></figure>
@@ -55,10 +55,9 @@ export default function Special({ children, special }) {
                           <li>Github</li>
                       </ul>
                   </div>
-                    
-                </div>
+                      
+                  </div>
               </div>
-
             </div>
             </>
           ) : (

@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Aboutme from "../components/About.js"
 import Special from "../components/Special.js"
+import Roadmap from "../components/Roadmap.js"
 
 import utilStyles from '../styles/utils.module.scss'
 import badges from '../styles/badges.module.scss'
@@ -59,7 +60,9 @@ export default function Home() {
             <p className={badges.linkbadge}><a href="https://github.com/LCordial/myportfolio">Source Code</a></p>
 
             <ul className={[main.list, badges.flexbadge].join(' ')}>
+              <li className={[badges.warningbadge, main.horizontallist, badges.flexbadge].join(' ')}>Developing</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Javascript</li>
+              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>SCSS</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Nextjs</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Firebase</li>
             </ul>
@@ -73,10 +76,12 @@ export default function Home() {
             <p className={badges.linkbadge}><a href="https://github.com/LCordial/tanks-arena">Source Code</a></p>
 
             <ul className={[main.list, badges.flexbadge].join(' ')}>
+              <li className={[badges.warningbadge, main.horizontallist, badges.flexbadge].join(' ')}>Developing</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Javascript</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>p5.js</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Firebase</li>
             </ul>
+
           </a>
 
           <a href="https://github.com/LCordial/puzzle-game" className="card">
@@ -89,6 +94,7 @@ export default function Home() {
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>HTML</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>CSS</li>
             </ul>
+
           </a>
 
           <a href="https://github.com/LCordial/parkour-game-template" className="card">
@@ -100,13 +106,16 @@ export default function Home() {
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Unity3D</li>
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>C#</li>
             </ul>
+            
           </a>
 
         </div>
 
-        {/* <h1 className="secondaryTitle">
-          Hobbies
-        </h1>  */}
+        <h1 className="secondaryTitle">
+          Roadmap
+        </h1>
+
+        <Roadmap roadmap />
 
       </main>
 
