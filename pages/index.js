@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Aboutme from "../components/About.js"
 import Special from "../components/Special.js"
 
-import utilStyles from '../styles/utils.module.css'
-import badges from '../styles/badges.module.css'
-import main from '../styles/index.module.css'
+import utilStyles from '../styles/utils.module.scss'
+import badges from '../styles/badges.module.scss'
+import main from '../styles/index.module.scss'
 
 
 export default function Home() {
