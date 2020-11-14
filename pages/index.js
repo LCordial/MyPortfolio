@@ -41,8 +41,7 @@ export default function Home() {
           </section>
         </Aboutme>
       
-        <Special special></Special>
-
+        <Special special />
         
 
         <h1 className="secondaryTitle">
@@ -118,9 +117,6 @@ export default function Home() {
         </a>
 
       </footer>
-
-
-      {/* To be moved */}
 
       <style jsx>{`
         .container {
