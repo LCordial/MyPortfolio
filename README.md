@@ -1,4 +1,11 @@
+
 # Portfolio ![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen) ![GitHub issues](https://img.shields.io/github/issues/LCordial/myportfolio)
+<p>   
+   <img src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+   <img src="https://img.shields.io/badge/-Javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+   <img src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
+   <img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
+</p>
 `Portfolio` is my website that houses all my projects, developer roads maps and much more
 
 # Use
