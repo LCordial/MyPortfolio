@@ -1,6 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,7 +10,6 @@
 .grid{
   display: flex;
   flex-wrap: wrap;
-
   max-width: 5000px;
 }
 
@@ -23,6 +21,8 @@
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
+
+  background-color: white;
 }
 
 .headers{

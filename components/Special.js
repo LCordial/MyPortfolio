@@ -9,7 +9,7 @@ export default function Special({ children, special }) {
         <header className={styles.header}>
           {special ? (
             <>
-            <div className={styles.container}>
+            <div className={[styles.container].join(' ')}>
               <div className={styles.grid}>
                 <div className={styles.column}>
                     <div>
@@ -48,7 +48,7 @@ export default function Special({ children, special }) {
                     <figure><img src="/images/box.svg"></img></figure>
                       
                       <h1 className={styles.headers}>Ambience Studios</h1>
-                      <p className={styles.text}>I program with a group named Ambience Studios. Which allows me to share ideas with other people!</p>
+                      <p className={styles.text}>I program with a group named Ambience Studios. This allows me to engage with others, and share new and innovative ideas!</p>
 
                       <p className={styles.paragraphtitle}>Find us on:</p>
                       <ul className={styles.list}>

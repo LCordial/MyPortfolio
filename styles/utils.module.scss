@@ -50,12 +50,11 @@
   .lightText {
     color: #999;
   }
-  .introParagraph{
-      text-align: center;
-  }
+
   .youtubeLink{
       color: rgb(17, 76, 186)
   }
+
 
   .wavingHand{
     margin: 10px;
@@ -63,6 +62,7 @@
     animation: shake 0.6s;
     animation-iteration-count: infinite;
   }
+
 
   @keyframes shake{
     0% { transform:  rotate(4deg); }

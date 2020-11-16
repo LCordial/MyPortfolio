@@ -26,30 +26,20 @@ export default function Home() {
 
         <h1 className="title">
           Welcome to my Portfolio
-          <p className={utilStyles.wavingHand}>
-            👋
+          <p>
+            <p className={main.paragraph}>I code beautifully simple things, and I love what I do.</p>
           </p>
+
         </h1>
         
+        <Aboutme home />
 
-        {/* <p className="description">
-          Under construction. Please come back later.
-        </p> */}
-        
-        <Aboutme home>
-          <section className={utilStyles.headingMd}>
-            <p className={utilStyles.introParagraph}>I am a beginner backend and frontend Software Engineer, wanting to become better everyday. Specializing in Web development and Game Development. Using languages like Javascript, C#, HTML and CSS.</p>
-          </section>
-        </Aboutme>
-      
         <Special special />
         
 
         <h1 className="secondaryTitle">
           Projects
         </h1>
-
-        {/* Project Grid | To be seperated into component */}
 
         <div className="grid">
 
@@ -111,11 +101,11 @@ export default function Home() {
 
         </div>
 
-        <h1 className="secondaryTitle">
+        {/* <h1 className="secondaryTitle">
           Roadmap
         </h1>
 
-        <Roadmap roadmap />
+        <Roadmap roadmap /> */}
 
       </main>
 
@@ -185,7 +175,7 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
-          padding-bottom: 12rem;
+          padding-bottom: 7rem;
         }
 
         .secondaryTitle{
@@ -291,7 +281,7 @@ export default function Home() {
           width: 6px;
         }
         ::-webkit-scrollbar-track {
-          background: #f7f7f7;
+          background: #bdbdbd
         }
         ::-webkit-scrollbar-thumb {
           background-color: gray;
