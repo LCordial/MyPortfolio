@@ -17,6 +17,7 @@ Help development by joining the Ambience Studios discord server.
 
 # Packages
 * [Nextjs](https://nextjs.org/)
+* [Sass](https://sass-lang.com/)
 * [Firebase hosting](https://firebase.google.com/)
 
 # Compatibility
