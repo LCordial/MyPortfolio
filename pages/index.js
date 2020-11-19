@@ -1,11 +1,12 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Aboutme from "../components/About.js"
 import Special from "../components/Special.js"
 import Roadmap from "../components/Roadmap.js"
 
-import utilStyles from '../styles/utils.module.scss'
 import badges from '../styles/badges.module.scss'
+import navbar from '../styles/navbar.module.scss'
 import main from '../styles/index.module.scss'
 
 
@@ -13,6 +14,22 @@ export default function Home() {
 
   return (
     <div className="container">
+
+      <ul className={[navbar.navbarlist]}>
+
+        <li className={[navbar.navbaritem]}>
+          <Link href="/contact">
+              <a className={[navbar.navbaritema]} >Contact me</a>
+          </Link>
+        </li>
+        <li className={[navbar.navbaritem]}>
+          <Link href="/store">
+                <a className={[navbar.navbaritema]} >Store</a>
+          </Link>
+        </li>
+
+      </ul>
+
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -74,7 +91,7 @@ export default function Home() {
 
           </a>
 
-          <a href="https://github.com/LCordial/puzzle-game" className="card">
+          {/* <a href="https://github.com/LCordial/puzzle-game" className="card">
             <h3>Welcome to the Game &rarr;</h3>
             <p>Find clues and solve puzzles!</p>
 
@@ -85,7 +102,7 @@ export default function Home() {
               <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>CSS</li>
             </ul>
 
-          </a>
+          </a> */}
 
           <a href="https://github.com/LCordial/parkour-game-template" className="card">
             <h3>Parkour Game Template &rarr;</h3>
@@ -176,12 +193,13 @@ export default function Home() {
           line-height: 1.15;
           font-size: 4rem;
           padding-bottom: 7rem;
+          padding-top: 3rem;
         }
 
         .secondaryTitle{
           font-size: 3rem;
           padding-bottom: 7rem;
-          padding-top: 5rem;
+          padding-top: 1rem;
         }
 
         .title,
@@ -208,7 +226,7 @@ export default function Home() {
           justify-content: center;
           flex-wrap: wrap;
 
-          max-width: 1000px;
+          max-width: 1100px;
           margin-top: 3rem;
         }
 

@@ -1,8 +1,6 @@
 import styles from './component style/about.module.scss'
 import utilStyles from '../styles/utils.module.scss'
 
-import Link from 'next/link'
-
 const name = "Hi, I'm Eli."
 export const siteTitle = 'My Portfolio'
 
