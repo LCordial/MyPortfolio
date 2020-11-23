@@ -11,7 +11,7 @@ import main from "../styles/index.module.scss";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={[main.container]}>
       <ul className={[navbar.navbarlist]}>
         <li className={[navbar.navbaritem]}>
           <Link href="/contact">
@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
+        <h1 className={[main.title]}>
           Welcome to my Portfolio
           <p>
             <p className={main.paragraph}>
@@ -45,7 +45,7 @@ export default function Home() {
 
         <Special special />
 
-        <h1 className="secondaryTitle">Projects</h1>
+        <h1 className={[main.secondaryheader]}>Projects</h1>
 
         <div className="grid">
           <a href="https://cordial.ambience.studio/" className="card">
@@ -204,12 +204,6 @@ export default function Home() {
             </ul>
           </a>
         </div>
-
-        {/* <h1 className="secondaryTitle">
-          Roadmap
-        </h1>
-
-        <Roadmap roadmap /> */}
       </main>
 
       <footer>
@@ -219,15 +213,6 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
         main {
           padding: 5rem 0;
           flex: 1;
@@ -254,54 +239,6 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-          padding-bottom: 7rem;
-          padding-top: 3rem;
-        }
-
-        .secondaryTitle {
-          font-size: 3rem;
-          padding-bottom: 7rem;
-          padding-top: 1rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          font-size: 0.8rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -344,10 +281,6 @@ export default function Home() {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
         }
 
         @media (max-width: 600px) {
