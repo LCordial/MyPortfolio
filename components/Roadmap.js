@@ -1,6 +1,6 @@
-import styles from './component style/roadmap.module.scss'
+import styles from "./component style/roadmap.module.scss";
 
-import main from "../styles/index.module.scss"
+import main from "../styles/index.module.scss";
 
 export default function Roadmap({ children, roadmap }) {
   return (
@@ -8,15 +8,13 @@ export default function Roadmap({ children, roadmap }) {
       <header className={styles.header}>
         {roadmap ? (
           <>
-            <div className={styles.container}>
-            </div>
+            <div className={styles.container}></div>
           </>
         ) : (
-          <>
-          </>
+          <></>
         )}
       </header>
       <main>{children}</main>
     </div>
-  )
+  );
 }

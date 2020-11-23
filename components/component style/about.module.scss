@@ -1,40 +1,40 @@
 .container {
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  }
-  .backgroundContainer{
-    background-color: rgba(29, 138, 15, 0.596);
-    width: 99.7vw;
-    padding: 5em;
-    height: 60vh;
-
-    transition: 0.1ms;
-  }
-
-  .text{
-    text-align: center;
-    max-width: 36rem;
-    justify-content: center;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
 }
-  
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .headerImage {
-    width: 6rem;
-    height: 6rem;
-  }
-  
-  .headerHomeImage {
-    width: 8rem;
-    height: 8rem;
-  }
+.backgroundContainer {
+  background-color: rgba(29, 138, 15, 0.596);
+  width: 99.7vw;
+  padding: 5em;
+  height: 60vh;
 
-  @media (max-width: 600px){
-    .backgroundContainer{
-      background-color: rgba(255, 255, 255, 0.596);
-    }
+  transition: 0.1ms;
+}
+
+.text {
+  text-align: center;
+  max-width: 36rem;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.headerHomeImage {
+  width: 8rem;
+  height: 8rem;
+}
+
+@media (max-width: 600px) {
+  .backgroundContainer {
+    background-color: rgba(255, 255, 255, 0.596);
   }
+}

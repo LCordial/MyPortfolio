@@ -12,5 +12,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.29.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.0"
   }
 }

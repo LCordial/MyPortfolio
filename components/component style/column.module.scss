@@ -5,15 +5,15 @@
   justify-content: center;
   align-items: center;
   line-height: 200%;
-  }
+}
 
-.grid{
+.grid {
   display: flex;
   flex-wrap: wrap;
   max-width: 5000px;
 }
 
-.column{
+.column {
   flex-basis: 20%;
   padding: 1.5rem;
   text-align: center;
@@ -25,20 +25,20 @@
   background-color: white;
 }
 
-.headers{
+.headers {
   font-size: 1.5em;
 }
 
-.paragraphtitle{
+.paragraphtitle {
   color: rgb(5, 77, 185);
 }
 
-.list{
+.list {
   list-style-type: none;
   padding: 0;
 }
 
-.text{
+.text {
   width: 20em;
 }
 

@@ -1,49 +1,38 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from "next/head";
+import Link from "next/link";
 
-import navbar from '../styles/navbar.module.scss'
+import navbar from "../styles/navbar.module.scss";
 
 export default function Home() {
-
   return (
     <div className="container">
-
-        <ul className={[navbar.navbarlist]}>
-
-            <li className={[navbar.navbaritem]}>
-                <Link href="/">
-                    <a className={[navbar.navbaritema]} >Home</a>
-                </Link>
-            </li>
-            <li className={[navbar.navbaritem]}>
-                <Link href="/store">
-                    <a className={[navbar.navbaritema]} >Store</a>
-                </Link>
-            </li>
-
-        </ul>
+      <ul className={[navbar.navbarlist]}>
+        <li className={[navbar.navbaritem]}>
+          <Link href="/">
+            <a className={[navbar.navbaritema]}>Home</a>
+          </Link>
+        </li>
+        <li className={[navbar.navbaritem]}>
+          <Link href="/store">
+            <a className={[navbar.navbaritema]}>Store</a>
+          </Link>
+        </li>
+      </ul>
 
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="My Portfolio"
-        />
+        <meta name="description" content="My Portfolio" />
         <title>Eli Bessen | Contact</title>
       </Head>
 
       <main>
-
         <p>Contact coming soon! | Please come back later</p>
-
       </main>
 
       <footer>
-        
         <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
           Powered by Next.js
         </a>
-
       </footer>
 
       <style jsx>{`
@@ -65,11 +54,11 @@ export default function Home() {
           align-items: center;
         }
 
-        .secondaryTitle{
-            font-size: 3rem;
-            padding-bottom: 7rem;
-            padding-top: 5rem;
-          }
+        .secondaryTitle {
+          font-size: 3rem;
+          padding-bottom: 7rem;
+          padding-top: 5rem;
+        }
 
         footer {
           width: 100%;
@@ -79,7 +68,6 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-        
 
         footer img {
           margin-left: 0.5rem;
@@ -102,10 +90,7 @@ export default function Home() {
             flex-direction: column;
           }
         }
-
-
       `}</style>
-
 
       <style jsx global>{`
         html,
@@ -120,10 +105,10 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-
       `}</style>
 
-      <style global>{`
+      <style global>
+        {`
 
         ::-webkit-scrollbar {
           width: 6px;
@@ -137,9 +122,7 @@ export default function Home() {
         }
 
       `}
-        
       </style>
-
     </div>
-  )
+  );
 }

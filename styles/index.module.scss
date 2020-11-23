@@ -1,31 +1,31 @@
-.list{
-    list-style-type: none;
-    padding: 0;
+.list {
+  list-style-type: none;
+  padding: 0;
 }
-.horizontallist{
-    display:inline;
-    margin: 0.3em;
-}
-
-.secondaryheader{
-    font-size: 3rem;
-    padding-bottom: 7rem;
-    padding-top: 5rem;
+.horizontallist {
+  display: inline;
+  margin: 0.3em;
 }
 
-.paragraph{
-    font-size: 1.5rem;
-    font-weight: lighter;
+.secondaryheader {
+  font-size: 3rem;
+  padding-bottom: 7rem;
+  padding-top: 5rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 // Profile picture |
 
 .headerImage {
-    width: 6rem;
-    height: 6rem;
-  }
-  
+  width: 6rem;
+  height: 6rem;
+}
+
 .headerHomeImage {
-    width: 10rem;
-    height: 10rem;
-  }
+  width: 10rem;
+  height: 10rem;
+}
