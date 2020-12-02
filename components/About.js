@@ -17,7 +17,7 @@ export default function Aboutme({ children, home }) {
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
             <section className={utilStyles.headingMd}>
-              <p className={[utilStyles.introParagraph, styles.text].join(" ")}>
+              <p className={[styles.introparagraph].join(" ")}>
                 I am a beginner backend and frontend Software Engineer, wanting
                 to become better everyday. Specializing in Web development and
                 Game Development. Using languages like Javascript, C#, HTML and

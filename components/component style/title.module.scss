@@ -1,0 +1,32 @@
+.container {
+  // background-image: url("/images/emile-perron-unsplash.jpg");
+
+  width: 99.7vw;
+  padding: 5em;
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: 0.1ms;
+}
+
+@mixin title {
+  text-align: center;
+}
+
+.title {
+  font-size: auto;
+  padding-bottom: 7rem;
+  padding-top: 3rem;
+
+  @include title;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: auto;
+}

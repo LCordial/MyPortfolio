@@ -1,33 +1,24 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+@mixin basicflex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  padding-bottom: 7rem;
-  padding-top: 3rem;
+@mixin list {
+  list-style-type: none;
+  padding: 0;
 }
 
-.title,
-.description {
-  text-align: center;
-}
+.container {
+  @include basicflex;
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  padding: 0 1rem;
+  margin: 1rem auto 6rem;
 }
 
 .list {
-  list-style-type: none;
-  padding: 0;
+  @include list;
 }
 .horizontallist {
   display: inline;
@@ -41,18 +32,16 @@
 }
 
 .paragraph {
-  font-size: 1.5rem;
+  font-size: 2.5vh;
   font-weight: lighter;
 }
 
-// Profile picture |
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #e6e3e3;
+  color: black;
+  text-decoration: none;
 
-.headerImage {
-  width: 6rem;
-  height: 6rem;
-}
-
-.headerHomeImage {
-  width: 10rem;
-  height: 10rem;
+  @include basicflex;
 }

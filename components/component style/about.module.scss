@@ -1,40 +1,33 @@
 .container {
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  margin: 0rem auto 6rem;
 }
 .backgroundContainer {
-  background-color: rgba(29, 138, 15, 0.596);
+  background-color: rgb(121, 209, 109);
   width: 99.7vw;
   padding: 5em;
-  height: 60vh;
+  height: auto;
 
   transition: 0.1ms;
 }
 
-.text {
+.introparagraph {
+  font-size: auto;
   text-align: center;
   max-width: 36rem;
   justify-content: center;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.headerImage {
-  width: 6rem;
-  height: 6rem;
-}
-
+.headerImage,
 .headerHomeImage {
-  width: 8rem;
-  height: 8rem;
-}
-
-@media (max-width: 600px) {
-  .backgroundContainer {
-    background-color: rgba(255, 255, 255, 0.596);
-  }
+  width: 10rem;
 }

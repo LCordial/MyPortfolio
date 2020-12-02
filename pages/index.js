@@ -1,10 +1,14 @@
+// Importing next.js extras
 import Head from "next/head";
 import Link from "next/link";
 
+// Importing Componenets
 import Aboutme from "../components/About.js";
 import Special from "../components/Special.js";
+import Title from "../components/Title.js";
 import Roadmap from "../components/Roadmap.js";
 
+// Importing Styles
 import badges from "../styles/badges.module.scss";
 import navbar from "../styles/navbar.module.scss";
 import main from "../styles/index.module.scss";
@@ -28,18 +32,16 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="My Portfolio" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <title>Eli Bessen | Programmer, Gamer</title>
       </Head>
 
       <main>
-        <h1 className={[main.title]}>
-          Welcome to my Portfolio
-          <p>
-            <p className={main.paragraph}>
-              I code beautifully simple things, and I love what I do.
-            </p>
-          </p>
-        </h1>
+        {/* Renderign Title, About Me and Columns */}
+        <Title title />
 
         <Aboutme home />
 
@@ -52,8 +54,13 @@ export default function Home() {
             <h3>Portfolio &rarr;</h3>
             <p>My Portfolio.</p>
 
-            <p className={badges.linkbadge}>
-              <a href="https://github.com/LCordial/myportfolio">Source Code</a>
+            <p>
+              <a
+                className={badges.linkbadge}
+                href="https://github.com/LCordial/myportfolio"
+              >
+                Source Code
+              </a>
             </p>
 
             <ul className={[main.list, badges.flexbadge].join(" ")}>
@@ -109,8 +116,13 @@ export default function Home() {
             <h3>Tanks &rarr;</h3>
             <p>A project for Digital Technolgies class.</p>
 
-            <p className={badges.linkbadge}>
-              <a href="https://github.com/LCordial/tanks-arena">Source Code</a>
+            <p>
+              <a
+                className={badges.linkbadge}
+                href="https://github.com/LCordial/tanks-arena"
+              >
+                Source Code
+              </a>
             </p>
 
             <ul className={[main.list, badges.flexbadge].join(" ")}>
@@ -205,12 +217,10 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer>
-        <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
-          Powered by Next.js
+      
+        <a href="https://nextjs.org/" className={[main.footer]}>
+          <p>Powered by Next.js</p>
         </a>
-      </footer>
 
       <style jsx>{`
         main {
@@ -222,32 +232,12 @@ export default function Home() {
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
         .grid {
           display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
 
-          max-width: 1100px;
           margin-top: 3rem;
         }
 
