@@ -1,10 +1,10 @@
 import styles from "./component style/column.module.scss";
 
-export default function Special({ children, special }) {
+export default function Column({ children, column }) {
   return (
     <div>
       <header className={styles.header}>
-        {special ? (
+        {column ? (
           <>
             <div className={[styles.container].join(" ")}>
               <div className={styles.grid}>

@@ -11,6 +11,19 @@
   transition: 0.1ms;
 }
 
+.heading2Xl {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
 .introparagraph {
   font-size: auto;
   text-align: center;
@@ -30,4 +43,9 @@
 .headerImage,
 .headerHomeImage {
   width: 10rem;
+}
+
+.borderCircle {
+  border-radius: 9999em;
+  height: 100%;
 }

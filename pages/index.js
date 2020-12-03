@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // Importing Componenets
 import Aboutme from "../components/About.js";
-import Special from "../components/Special.js";
+import Column from "../components/Column.js";
 import Title from "../components/Title.js";
 import Roadmap from "../components/Roadmap.js";
 
@@ -16,19 +16,6 @@ import main from "../styles/index.module.scss";
 export default function Home() {
   return (
     <div className={[main.container]}>
-      <ul className={[navbar.navbarlist]}>
-        <li className={[navbar.navbaritem]}>
-          <Link href="/contact">
-            <a className={[navbar.navbaritema]}>Contact me</a>
-          </Link>
-        </li>
-        <li className={[navbar.navbaritem]}>
-          <Link href="/store">
-            <a className={[navbar.navbaritema]}>Store</a>
-          </Link>
-        </li>
-      </ul>
-
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="My Portfolio" />
@@ -36,16 +23,30 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+        <meta charSet="UTF-8" />
         <title>Eli Bessen | Programmer, Gamer</title>
       </Head>
 
       <main>
+        <ul className={[navbar.navbarlist]}>
+          <li className={[navbar.navbaritem]}>
+            <Link href="/contact">
+              <a className={[navbar.navbaritema]}>Contact me</a>
+            </Link>
+          </li>
+          <li className={[navbar.navbaritem]}>
+            <Link href="/store">
+              <a className={[navbar.navbaritema]}>Store</a>
+            </Link>
+          </li>
+        </ul>
+
         {/* Renderign Title, About Me and Columns */}
         <Title title />
 
         <Aboutme home />
 
-        <Special special />
+        <Column column />
 
         <h1 className={[main.secondaryheader]}>Projects</h1>
 
@@ -217,14 +218,13 @@ export default function Home() {
           </a>
         </div>
       </main>
-      
-        <a href="https://nextjs.org/" className={[main.footer]}>
-          <p>Powered by Next.js</p>
-        </a>
+
+      <a href="https://nextjs.org/" className={[main.footer]}>
+        <p>Powered by Next.js</p>
+      </a>
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -278,6 +278,24 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
+        }
+
+        html,
+        body,
+        div,
+        span,
+        object,
+        iframe,
+        figure {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          font: inherit;
+          vertical-align: baseline;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          text-size-adjust: none;
         }
       `}</style>
 
