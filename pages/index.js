@@ -3,10 +3,11 @@ import Head from "next/head";
 import Link from "next/link";
 
 // Importing Componenets
+import Title from "../components/Title.js";
 import Aboutme from "../components/About.js";
 import Column from "../components/Column.js";
-import Title from "../components/Title.js";
 import Roadmap from "../components/Roadmap.js";
+import Footer from "../components/Footer.js";
 
 // Importing Styles
 import badges from "../styles/badges.module.scss";
@@ -17,7 +18,7 @@ export default function Home() {
   return (
     <div className={[main.container]}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/profile.jpg" />
         <meta name="description" content="My Portfolio" />
         <meta
           name="viewport"
@@ -41,10 +42,10 @@ export default function Home() {
           </li>
         </ul>
 
-        {/* Renderign Title, About Me and Columns */}
+        {/* Renderign Title, About Me and Columns etc.*/}
         <Title title />
 
-        <Aboutme home />
+        <Aboutme aboutme />
 
         <Column column />
 
@@ -113,7 +114,7 @@ export default function Home() {
             </ul>
           </a>
 
-          <a href="https://tanks.ambience.studio" className="card">
+          {/* <a href="https://tanks.ambience.studio" className="card">
             <h3>Tanks &rarr;</h3>
             <p>A project for Digital Technolgies class.</p>
 
@@ -164,20 +165,57 @@ export default function Home() {
                 Firebase
               </li>
             </ul>
-          </a>
-
-          {/* <a href="https://github.com/LCordial/puzzle-game" className="card">
-            <h3>Welcome to the Game &rarr;</h3>
-            <p>Find clues and solve puzzles!</p>
-
-            <ul className={[main.list, badges.flexbadge].join(' ')}>
-              <li className={[badges.errorbadge, main.horizontallist, badges.flexbadge].join(' ')}>Incomplete</li>
-              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>Javascript</li>
-              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>HTML</li>
-              <li className={[badges.infobadge, main.horizontallist, badges.flexbadge].join(' ')}>CSS</li>
-            </ul>
-
           </a> */}
+
+          <a
+            href="https://github.com/Ambience-Studios/ambience.css"
+            className="card"
+          >
+            <h3>Ambience.css &rarr;</h3>
+            <p>
+              A lightweight CSS framework to create a modern, sleek and
+              intuitive website.
+            </p>
+
+            <ul className={[main.list, badges.flexbadge].join(" ")}>
+              <li
+                className={[
+                  badges.warningbadge,
+                  main.horizontallist,
+                  badges.flexbadge,
+                ].join(" ")}
+              >
+                Developing
+              </li>
+              <li
+                className={[
+                  badges.infobadge,
+                  main.horizontallist,
+                  badges.flexbadge,
+                ].join(" ")}
+              >
+                SCSS
+              </li>
+              <li
+                className={[
+                  badges.infobadge,
+                  main.horizontallist,
+                  badges.flexbadge,
+                ].join(" ")}
+              >
+                CSS
+              </li>
+              <li
+                className={[
+                  badges.infobadge,
+                  main.horizontallist,
+                  badges.flexbadge,
+                ].join(" ")}
+              >
+                HTML
+              </li>
+            </ul>
+          </a>
 
           <a
             href="https://github.com/LCordial/parkour-game-template"
@@ -217,11 +255,9 @@ export default function Home() {
             </ul>
           </a>
         </div>
-      </main>
 
-      <a href="https://nextjs.org/" className={[main.footer]}>
-        <p>Powered by Next.js</p>
-      </a>
+        <Footer footer />
+      </main>
 
       <style jsx>{`
         main {
@@ -296,6 +332,7 @@ export default function Home() {
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
           text-size-adjust: none;
+          overflow: hidden;
         }
       `}</style>
 

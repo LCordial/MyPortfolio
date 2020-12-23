@@ -1,3 +1,8 @@
+@mixin description {
+  line-height: 1.5;
+  font-size: auto;
+}
+
 .container {
   padding: 0 1rem;
   margin: 0rem auto 6rem;
@@ -31,6 +36,8 @@
   justify-content: center;
   word-wrap: break-word;
   word-break: keep-all;
+
+  padding-bottom: 5rem;
 }
 
 .header {
@@ -48,4 +55,28 @@
 .borderCircle {
   border-radius: 9999em;
   height: 100%;
+}
+
+// Youtube Aboutme
+
+.title {
+  font-size: auto;
+  color: black;
+  text-decoration: none;
+
+  transition: 0.05s;
+}
+
+.title:hover,
+.title:focus {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.description {
+  @include description;
+}
+.descriptionlink {
+  @include description;
+  text-decoration: none;
 }

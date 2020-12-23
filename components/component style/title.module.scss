@@ -1,8 +1,9 @@
 .container {
-  background-image: url("/images/filip-zrnzevic-unsplash.jpg");
+  background-image: url("/images/background/alberto-restifo-unsplash.jpg");
 
   width: 99.7vw;
   padding: 5em;
+
   height: auto;
 
   /* Create the parallax scrolling effect */
@@ -20,7 +21,10 @@
 
 .title {
   font-size: auto;
-  padding-bottom: 20rem;
+
+  color: rgb(0, 0, 0);
+
+  padding-bottom: 25rem;
   padding-top: 13rem;
 
   @include title;
@@ -29,4 +33,14 @@
 .description {
   line-height: 1.5;
   font-size: auto;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: gray;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

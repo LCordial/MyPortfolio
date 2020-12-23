@@ -17,6 +17,24 @@ export default function Title({ children, title }) {
                   </p>
                 </p>
               </h1>
+              <p>
+                <span>
+                  Photo by{" "}
+                  <a
+                    className={[styles.link]}
+                    href="https://unsplash.com/@albertorestifo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                  >
+                    Alberto Restifo
+                  </a>{" "}
+                  on{" "}
+                  <a
+                    className={[styles.link]}
+                    href="https://unsplash.com/s/photos/snow?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                  >
+                    Unsplash
+                  </a>
+                </span>
+              </p>
             </div>
           </>
         ) : (
