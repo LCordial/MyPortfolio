@@ -18,7 +18,22 @@ export default function Title({ children, title }) {
                 </p>
               </h1>
               <p>
-              <span>Photo by <a className={styles.link} href="https://unsplash.com/@filipz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Filip Zrnzević</a> on <a className={styles.link} href="https://unsplash.com/@filipz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                <span>
+                  Photo by{" "}
+                  <a
+                    className={styles.link}
+                    href="https://unsplash.com/@filipz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                  >
+                    Filip Zrnzević
+                  </a>{" "}
+                  on{" "}
+                  <a
+                    className={styles.link}
+                    href="https://unsplash.com/@filipz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                  >
+                    Unsplash
+                  </a>
+                </span>
               </p>
             </div>
           </>

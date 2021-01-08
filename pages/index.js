@@ -49,8 +49,6 @@ export default function Home() {
 
         <Column column />
 
-        <h1 className={[main.secondaryheader]}>Personal Roadmap</h1>
-
         <Roadmap roadmap />
 
         <h1 className={[main.secondaryheader]}>Projects</h1>
