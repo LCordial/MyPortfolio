@@ -8,11 +8,10 @@ export default function Roadmap({ children, roadmap }) {
       {roadmap ? (
         <>
           <h1 className={[main.secondaryheader]}>Personal Roadmap</h1>
-          
+
           <div className={styles.container}>
             <div className={styles.grid}>
               <div className={styles.column}>
-
                 {/* Frontend */}
 
                 {/* Html */}
@@ -23,10 +22,10 @@ export default function Roadmap({ children, roadmap }) {
                     className={styles.image}
                     src="/images/languages/html5.svg"
                   ></img>
-                  <p className={styles.text} >HTML5</p>
-                  <div className={styles.progress}>
+                  <p className={styles.text}>HTML5</p>
+                  {/* <div className={styles.progress}>
                     <div className={styles.htmlprogressvalue}></div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* CSS */}
@@ -36,11 +35,11 @@ export default function Roadmap({ children, roadmap }) {
                     className={styles.image}
                     src="/images/languages/css3.svg"
                   ></img>
-                  <p className={styles.text} >CSS3</p>
+                  <p className={styles.text}>CSS3</p>
                 </div>
-                <div className={styles.progress}>
+                {/* <div className={styles.progress}>
                   <div className={styles.cssprogressvalue}></div>
-                </div>
+                </div> */}
 
                 {/* JS */}
 
@@ -49,11 +48,11 @@ export default function Roadmap({ children, roadmap }) {
                     className={styles.image}
                     src="/images/languages/javascript.svg"
                   ></img>
-                  <p className={styles.text} >Javascript</p>
+                  <p className={styles.text}>Javascript</p>
                 </div>
-                <div className={styles.progress}>
+                {/* <div className={styles.progress}>
                   <div className={styles.jsprogressvalue}></div>
-                </div>
+                </div> */}
 
                 {/* SASS */}
 
@@ -62,11 +61,11 @@ export default function Roadmap({ children, roadmap }) {
                     className={styles.image}
                     src="/images/languages/sass.svg"
                   ></img>
-                  <p className={styles.text} >SASS</p>
+                  <p className={styles.text}>SASS</p>
                 </div>
-                <div className={styles.progress}>
+                {/* <div className={styles.progress}>
                   <div className={styles.sassprogressvalue}></div>
-                </div>
+                </div> */}
               </div>
 
               {/* Backend */}
@@ -81,10 +80,10 @@ export default function Roadmap({ children, roadmap }) {
                     className={styles.image}
                     src="/images/languages/python.svg"
                   ></img>
-                  <p className={styles.text} >Python</p>
-                  <div className={styles.progress}>
+                  <p className={styles.text}>Python</p>
+                  {/* <div className={styles.progress}>
                     <div className={styles.pythonprogressvalue}></div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* C# */}
@@ -94,11 +93,11 @@ export default function Roadmap({ children, roadmap }) {
                     className={styles.image}
                     src="/images/languages/csharp.svg"
                   ></img>
-                  <p className={styles.text} >C#</p>
+                  <p className={styles.text}>C#</p>
                 </div>
-                <div className={styles.progress}>
+                {/* <div className={styles.progress}>
                   <div className={styles.csprogressvalue}></div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

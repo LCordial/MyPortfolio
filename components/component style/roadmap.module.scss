@@ -25,6 +25,7 @@
   text-decoration: none;
   height: auto;
   padding: 5%;
+  width: 50rem;
 
   border: 1px solid #eaeaea;
   border-radius: 10px;
@@ -54,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .progress{
+  .progress {
     opacity: 0%;
   }
 }
@@ -64,7 +65,7 @@
 }
 
 .image {
-  width: 9rem;
+  width: 7rem;
   padding: 1rem;
   padding-top: 2rem;
 }
@@ -174,4 +175,3 @@
     width: 10%;
   }
 }
-
