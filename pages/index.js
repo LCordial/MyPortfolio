@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <ul className={[navbar.navbarlist]}>
+        {/* <ul className={[navbar.navbarlist]}>
           <li className={[navbar.navbaritem]}>
             <Link href="/contact">
               <a className={[navbar.navbaritema]}>Contact me</a>
@@ -40,7 +40,7 @@ export default function Home() {
               <a className={[navbar.navbaritema]}>Store</a>
             </Link>
           </li>
-        </ul>
+        </ul> */}
 
         {/* Renderign Title, About Me and Columns etc.*/}
         <Title title />
@@ -272,9 +272,7 @@ export default function Home() {
 
         .grid {
           display: flex;
-          align-items: center;
           justify-content: center;
-          flex-wrap: wrap;
 
           margin-top: 3rem;
         }
@@ -311,12 +309,7 @@ export default function Home() {
           line-height: 1.5;
         }
 
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
+\\
 
         html,
         body,

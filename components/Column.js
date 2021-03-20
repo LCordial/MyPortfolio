@@ -42,10 +42,9 @@ export default function Column({ children, column }) {
                     <p className={styles.text}>Javascript, C#, Python, CSS,</p>
                     <p className={styles.paragraphtitle}>Dev Tools:</p>
                     <ul className={styles.list}>
-                      <li>Visual Studio Code</li>
                       <li>Visual Studio</li>
                       <li>Github</li>
-                      <li>Terminal</li>
+                      <li>WSL: Debian</li>
                     </ul>
                   </div>
                 </div>
