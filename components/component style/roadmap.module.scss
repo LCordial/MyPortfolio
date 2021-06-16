@@ -1,8 +1,11 @@
 .container {
+  background-color: white;
   padding: 0.5em;
   height: auto;
 
   transition: 0.1ms;
+
+  z-index: 1;
 }
 
 .grid {

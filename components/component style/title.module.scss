@@ -1,10 +1,9 @@
 .container {
-  background-image: url("/images/background/filip-zrnzevic-unsplash.jpg");
+  background-image: url(../../public/images/john-towner-unsplash.jpg);
 
   width: 99.7vw;
+  height: 99vh;
   padding: 5em;
-
-  height: auto;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -15,32 +14,197 @@
   transition: 0.1ms;
 }
 
-@mixin title {
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.title {
-  font-size: auto;
-
-  color: rgb(0, 0, 0);
-
-  padding-bottom: 25rem;
-  padding-top: 13rem;
-
-  @include title;
+.titleText {
+  color: white;
+  width: 20%;
+  text-align: left;
+  font-size: 6vh;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: auto;
+.titleAnimation{
+  -webkit-animation: titlefadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: titlefadein 4s; /* Firefox < 16 */
+  -ms-animation: titlefadein 4s; /* Internet Explorer */
+  -o-animation: titlefadein 4s; /* Opera < 12.1 */
+  animation: titlefadein 4s;
 }
 
-.link {
-  text-decoration: none;
-  font-weight: bold;
-  color: gray;
+@keyframes titlefadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.link:hover {
-  text-decoration: underline;
+/* Firefox < 16 */
+@-moz-keyframes titlefadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes titlefadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .titleText {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .titleText {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleText {
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleText {
+    width: 100%;
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .titleText {
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+  }
+}
+
+// Image
+
+.profileContainer {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.headerImage,
+.headerHomeImage {
+  width: 8rem;
+}
+
+.borderCircle {
+  border-radius: 9999em;
+}
+
+.profileAnimation {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(7rem, 0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Circle Menu
+.menu {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+}
+
+.menuimage {
+  padding-top: 1rem;
+  width: 3rem;
 }

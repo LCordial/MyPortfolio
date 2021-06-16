@@ -25,32 +25,15 @@ export default function Home() {
           content="width=device-width, initial-scale=1.0"
         ></meta>
         <meta charSet="UTF-8" />
-        <title>Eli Bessen | Programmer, Gamer</title>
+        <title>Eli Bessen | Programmer</title>
       </Head>
 
       <main>
-        {/* <ul className={[navbar.navbarlist]}>
-          <li className={[navbar.navbaritem]}>
-            <Link href="/contact">
-              <a className={[navbar.navbaritema]}>Contact me</a>
-            </Link>
-          </li>
-          <li className={[navbar.navbaritem]}>
-            <Link href="/store">
-              <a className={[navbar.navbaritema]}>Store</a>
-            </Link>
-          </li>
-        </ul> */}
-
-        {/* Renderign Title, About Me and Columns etc.*/}
         <Title title />
 
         <Aboutme aboutme />
 
-        <Column column />
-
-        <Roadmap roadmap />
-
+        <a name="projects" id="projects"></a>
         <h1 className={[main.secondaryheader]}>Projects</h1>
 
         <div className="grid">
@@ -116,58 +99,6 @@ export default function Home() {
             </ul>
           </a>
 
-          {/* <a href="https://tanks.ambience.studio" className="card">
-            <h3>Tanks &rarr;</h3>
-            <p>A project for Digital Technolgies class.</p>
-
-            <p>
-              <a
-                className={badges.linkbadge}
-                href="https://github.com/LCordial/tanks-arena"
-              >
-                Source Code
-              </a>
-            </p>
-
-            <ul className={[main.list, badges.flexbadge].join(" ")}>
-              <li
-                className={[
-                  badges.warningbadge,
-                  main.horizontallist,
-                  badges.flexbadge,
-                ].join(" ")}
-              >
-                Developing
-              </li>
-              <li
-                className={[
-                  badges.infobadge,
-                  main.horizontallist,
-                  badges.flexbadge,
-                ].join(" ")}
-              >
-                Javascript
-              </li>
-              <li
-                className={[
-                  badges.infobadge,
-                  main.horizontallist,
-                  badges.flexbadge,
-                ].join(" ")}
-              >
-                p5.js
-              </li>
-              <li
-                className={[
-                  badges.infobadge,
-                  main.horizontallist,
-                  badges.flexbadge,
-                ].join(" ")}
-              >
-                Firebase
-              </li>
-            </ul>
-          </a> */}
 
           <a
             href="https://github.com/Ambience-Studios/ambience.css"
@@ -214,7 +145,7 @@ export default function Home() {
                   badges.flexbadge,
                 ].join(" ")}
               >
-                HTML
+                Javascript
               </li>
             </ul>
           </a>
@@ -263,21 +194,26 @@ export default function Home() {
 
       <style jsx>{`
         main {
-          flex: 1;
+          z-index: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          overflow-y: scroll;
         }
 
         .grid {
           display: flex;
           justify-content: center;
 
+          z-index: 1;
+          flex-wrap: wrap;
           margin-top: 3rem;
         }
 
         .card {
+          z-index: 1;
+          background-color: white;
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
@@ -291,11 +227,11 @@ export default function Home() {
 
         .card:hover,
         .card:focus {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #1e6091;
+          border-color: #168aad;
         }
         .card:active {
-          color: #003879;
+          color: #184e77;
         }
 
         .card h3 {
@@ -309,14 +245,15 @@ export default function Home() {
           line-height: 1.5;
         }
 
-\\
+        html {
+          scroll-behavior: smooth;
+        }
 
         html,
         body,
         div,
         span,
         object,
-        iframe,
         figure {
           margin: 0;
           padding: 0;
@@ -327,7 +264,7 @@ export default function Home() {
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
           text-size-adjust: none;
-          overflow: hidden;
+          overflow-x: hidden;
         }
       `}</style>
 

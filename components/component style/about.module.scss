@@ -6,9 +6,20 @@
 .container {
   padding: 0 1rem;
   margin: 0rem auto 6rem;
+
+  background-color: rgb(153, 217, 140);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: 0.1ms;
+
+  z-index: 1;
 }
+
 .backgroundContainer {
-  background-color: rgb(121, 209, 109);
   width: 99.7vw;
   padding: 5em;
   height: auto;

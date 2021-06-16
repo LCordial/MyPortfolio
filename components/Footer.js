@@ -7,27 +7,6 @@ export default function Footer({ children, footer }) {
     <div className={[styles.container]}>
       {footer ? (
         <>
-          <div className={[styles.socials]}>
-            <a href="https://twitter.com/LCordial_">
-              <img
-                src="/images/socials/twitter.svg"
-                className={[styles.sociallogos]}
-              ></img>
-            </a>
-            <a href="https://www.youtube.com/channel/UCNCLfAQwOSe1HmPmPWX3sJA">
-              <img
-                src="/images/socials/youtube.svg"
-                className={[styles.sociallogos]}
-              ></img>
-            </a>
-            <a href="https://www.instagram.com/lcordial_/">
-              <img
-                src="/images/socials/instagram.svg"
-                className={[styles.sociallogos]}
-              ></img>
-            </a>
-          </div>
-
           <a href="https://github.com/LCordial" className={[styles.creation]}>
             <p>Handcrafted by me</p>
           </a>

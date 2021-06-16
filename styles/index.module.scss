@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+.white{
+  color: white;
+}
+
 .container {
   @include basicflex;
 
@@ -29,8 +33,13 @@
   font-size: 3rem;
   padding-bottom: 7rem;
   padding-top: 5rem;
+  color: black;
 
   text-align: center;
+}
+
+.credit{
+  float: left;
 }
 
 .paragraph {
@@ -83,5 +92,47 @@
   }
   100% {
     transform: rotate(4deg);
+  }
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid green; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1.5s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+
+// Programming 'look'
+
+.programmingText {
+  color: green;
+  font-family: monospace;
+  float: left;
+  font-size: 1rem;
+}
+
+.programmingContainer {
+  align-items: flex-start;
+  width: 7%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
   }
 }
